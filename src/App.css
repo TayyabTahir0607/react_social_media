@@ -1,0 +1,33 @@
+.app-container {
+  display: flex;
+}
+.content {
+  width: 100%;
+}
+.post-card {
+  margin: 20px 40px;
+}
+.hash-tags {
+  margin: 0px 2px;
+}
+.reations {
+  min-height: 30px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-post {
+  width: 110vh;
+  margin-left: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  border: solid rgba(0, 0, 0, 0.172) 1px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.spinner {
+  width: 5rem;
+  height: 5rem;
+}
