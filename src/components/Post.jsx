@@ -3,13 +3,13 @@ import { PostListObj } from "../store/Post-list-store";
 
 const Post = ({ post }) => {
   const { deletePost } = useContext(PostListObj);
-  // console.log(post);
+  console.log(post);
   return (
     <div
       className="card text-bg-primary mb-3 post-card"
       style={{ maxWidth: " 18rem" }}
     >
-      <span className=" bg-danger reations">{post.reactions}</span>
+      {<span className=" bg-danger reations">{post.reactions.like}</span>}
 
       <span
         className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
