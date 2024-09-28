@@ -49,30 +49,5 @@ const PostListProvider = ({ children }) => {
     </PostListObj.Provider>
   );
 };
-// const INITIAL_POSTS = [
-//   {
-//     id: "1",
-//     title: "Going to Lahore",
-//     body: "This is a paragraph htmlFor test purpose only",
-//     reactions: 100,
-//     userId: "user-9",
-//     tags: ["vacations", "Lahore", "Enjoying"],
-//   },
-//   {
-//     id: "2",
-//     title: "Hello world",
-//     body: "two paragraphs were written in order to test this",
-//     reactions: 50,
-//     userId: "user-9",
-//     tags: ["programmng", "code", "love"],
-//   },
-//   {
-//     id: "3",
-//     title: "Tayyab",
-//     body: "two paragraphs were written in order to test this",
-//     reactions: 1030,
-//     userId: "user-9",
-//     tags: ["intro", "Tayyab", "human"],
-//   },
-// ];
+
 export default PostListProvider;
