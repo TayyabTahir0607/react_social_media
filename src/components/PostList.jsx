@@ -7,13 +7,19 @@ const PostList = () => {
   const { postList, addPosts } = useContext(PostListObj);
   let [loading, setLoading] = useState(false);
   useEffect(() => {
+    const controller = new AbortController();
+    const signal = controller.signal;
     setLoading(true);
-    fetch("https://dummyjson.com/posts")
+    fetch("https://dummyjson.com/posts", { signal })
       .then((res) => res.json())
       .then((data) => {
         addPosts(data.posts);
         setLoading(false);
       });
+    return () => {
+      console.log("cleaning up useEffect");
+      controller.abort();
+    };
   }, []);
 
   return (
