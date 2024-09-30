@@ -3,6 +3,7 @@ import { PostListObj } from "../store/Post-list-store";
 
 const Post = ({ post }) => {
   const { deletePost } = useContext(PostListObj);
+  console.log(post.title);
   return (
     <div
       className="card text-bg-primary mb-3 post-card"
