@@ -12,8 +12,9 @@ const PostListReducer = (state, action) => {
   if (action.type === "DELETE") {
     newList = state.filter((post) => post.id !== action.payload.ID);
   } else if (action.type === "ADD_POST") {
-    newList = [action.payload, ...state];
-    console.log("post added sucessfully");
+    newList = [action.payload.post, ...state];
+    console.log(newList);
+    console.log(action.payload.post);
   } else if (action.type === "ADD_POSTS") {
     newList = action.payload.posts;
   }
