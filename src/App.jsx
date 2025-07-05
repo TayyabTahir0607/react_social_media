@@ -16,7 +16,9 @@ function App() {
         <SideBar></SideBar>
         <div className="content">
           <Header></Header>
+          <div className="container">
           <Outlet></Outlet>
+          </div>
           <Foorter></Foorter>
         </div>
       </div>

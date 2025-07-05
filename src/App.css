@@ -31,3 +31,11 @@
   width: 5rem;
   height: 5rem;
 }
+.container{
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

@@ -1,8 +1,9 @@
+import "./Spinner.css"
 const Spinner = () => {
   return (
     <>
-      <div className="spinner-border spinner" role="status">
-        <span className="visually-hidden">Loading...</span>
+      <div className="spinner-border spinner" style={{width:"130px",height:"130px"}} role="status">
+        <span className="visually-hidden"></span>
       </div>
     </>
   );

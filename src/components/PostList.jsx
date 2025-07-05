@@ -7,10 +7,12 @@ const PostList = () => {
   const { postList, loading } = useContext(PostListObj);
   return (
     <>
+
       {loading && <Spinner></Spinner>}
       {!loading && postList.length === 0 && <WelcomeMessage></WelcomeMessage>}
       {!loading &&
         postList.map((post) => <Post key={post.id} post={post}></Post>)}
+
     </>
   );
 };

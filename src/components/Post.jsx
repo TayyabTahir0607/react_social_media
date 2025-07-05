@@ -6,7 +6,7 @@ const Post = ({ post }) => {
   return (
     <div
       className="card text-bg-primary mb-3 post-card"
-      style={{ maxWidth: " 18rem" }}
+      style={{ width: " 18rem",minHeight:"300px" }}
     >
       {<span className=" bg-danger reations">{post.reactions.likes}</span>}
 
